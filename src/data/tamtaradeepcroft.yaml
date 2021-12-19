@@ -1,0 +1,11 @@
+dungeonId: tamtaradeepcroft
+name: The TamTara Deepcroft
+fights:
+  - name: Void Soulcounter
+    strategy:
+      - Spawns once the sealed barriers are brought down
+  - name: Galvanth the Dominator
+    strategy:
+      - Dodge the AoE telegraph, it causes paralyze
+      - Kill the imps as soon as they come up
+      - Once the imps are dead, kill the other adds
