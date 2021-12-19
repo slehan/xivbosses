@@ -1,9 +1,23 @@
-exports.createPages = async ({ actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
+      query {
+        allDataYaml {
+            edges {
+              node {
+                dungeonId
+              }
+            }
+        }
+    }
+    `)
+
+    data.allDataYaml.edges.forEach(edge => {
+        const dungeonId = edge.node.dungeonId
+
+        actions.createPage({
+            path: `dungeons/${dungeonId}`,
+            component: require.resolve(`./src/pages/dungeons/dungeon.tsx`),
+            context: { dungeonId: dungeonId }
+        })
+    })
 }
