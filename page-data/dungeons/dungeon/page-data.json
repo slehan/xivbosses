@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
+    "path": "/dungeons/dungeon/",
+    "result": {"data":{"allDataYaml":{"edges":[{"node":{"name":"Satasha","fights":[{"name":"Chopper","strategy":["Summon Chopper by interacting with the coral","Run out of Charged Whisker, to avoid being paralyzed"]},{"name":"Captain Madison","strategy":["Kill adds first","AoE dogs down when they spawn at 50%"]},{"name":"Denn the Orcatoothed","strategy":["When the gates in all four corners start bubbling, interact with them to prevent adds from spawning","If you're targeted by the adds, bring them to the tank"]}]}},{"node":{"name":"The TamTara Deepcroft","fights":[{"name":"Void Soulcounter","strategy":["Spawns once the sealed barriers are brought down"]},{"name":"Galvanth the Dominator","strategy":["Dodge the AoE telegraph, it causes paralyze","Kill the imps as soon as they come up","Once the imps are dead, kill the other adds"]}]}}]}},"pageContext":{}},
+    "staticQueryHashes": ["3649515864"]}
