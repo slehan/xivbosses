@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/",
-    "result": {"pageContext":{}},
-    "staticQueryHashes": ["3649515864","63159454"]}
+    "result": {"data":{"allExpansionsYaml":{"nodes":[{"name":"A Realm Reborn","dungeons":[{"name":"Satasha","dungeonId":"satasha"},{"name":"The TamTara Deepcroft","dungeonId":"tamtaradeepcroft"}]},{"name":"Heavensward","dungeons":[]},{"name":"Stormblood","dungeons":[]},{"name":"Shadowbringers","dungeons":[{"name":"Amaurot","dungeonId":"amaurot"}]},{"name":"Endwalker","dungeons":[]}]}},"pageContext":{}},
+    "staticQueryHashes": ["3649515864"]}
