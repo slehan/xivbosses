@@ -1,21 +1,36 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { graphql, PageProps } from "gatsby"
+import { ExpansionsQuery, ExpansionsYaml  } from "../../graphql-types"
 
-const IndexPage = () => (
+const IndexPage = ({ data }: PageProps<ExpansionsQuery>) => {
+  console.log("ayyyy" + data)
+  return (
   <Layout>
-    <Seo title="Home" />
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
+    <ul>
+      {data.allExpansionsYaml.nodes.map(expansion =>
+        <li>
+          {expansion.name}
+          <ul>{expansion.dungeons?.map(dungeon =>
+            <li><a href={`/dungeons/${dungeon?.dungeonId}`}>{dungeon?.name}</a></li>)}
+          </ul>
+        </li>
+      )}
+    </ul>
   </Layout>
-)
-
+)}
 export default IndexPage
+
+export const query = graphql`
+query Expansions {
+    allExpansionsYaml {
+      nodes {
+				name,
+        dungeons {
+          name,
+          dungeonId
+        }
+      }
+    }
+}`

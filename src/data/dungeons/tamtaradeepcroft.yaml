@@ -1,5 +1,6 @@
 dungeonId: tamtaradeepcroft
 name: The TamTara Deepcroft
+expansionId: arr
 fights:
   - name: Void Soulcounter
     strategy:

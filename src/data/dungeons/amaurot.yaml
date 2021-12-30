@@ -1,5 +1,6 @@
-dungeonId: satasha
-name: Satasha
+dungeonId: amaurot
+name: Amaurot
+expansionId: shb 
 fights:
   - name: Chopper
     strategy:

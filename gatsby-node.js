@@ -1,7 +1,7 @@
 exports.createPages = async function ({ actions, graphql }) {
   const { data } = await graphql(`
       query {
-        allDataYaml {
+        allDungeonsYaml {
             edges {
               node {
                 dungeonId
@@ -11,7 +11,7 @@ exports.createPages = async function ({ actions, graphql }) {
     }
     `)
 
-    data.allDataYaml.edges.forEach(edge => {
+    data.allDungeonsYaml.edges.forEach(edge => {
         const dungeonId = edge.node.dungeonId
 
         actions.createPage({
@@ -20,4 +20,14 @@ exports.createPages = async function ({ actions, graphql }) {
             context: { dungeonId: dungeonId }
         })
     })
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type ExpansionsYaml implements Node {
+      dungeons: [DungeonsYaml] @link(from: "expansionId", by: "expansionId")
+    }
+  `
+  createTypes(typeDefs)
 }

@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
+        name: `expansions`,
+        path: `${__dirname}/src/data/dungeons`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
@@ -46,6 +46,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    `gatsby-plugin-graphql-codegen`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
