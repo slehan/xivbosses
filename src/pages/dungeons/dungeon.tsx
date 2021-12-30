@@ -1,21 +1,20 @@
 
 import Layout from "../../components/layout"
-import { graphql } from "gatsby"
+import { graphql, PageProps } from "gatsby"
 import React from "react"
-import { Dungeon } from "../../models/dungeons/dungeon"
-import { GraphQlResult } from "../../models/common/data"
+import { DungeonDataQuery, DungeonsYaml } from "../../../graphql-types"
 
-const DungeonName = ({ data } : GraphQlResult<Dungeon>) => {
+const DungeonName = ({ data }: PageProps<DungeonDataQuery>) => {
   return (
     <Layout>
-      <h1>{data.allDataYaml.edges[0].node.name}</h1>
+      <h1>{data.allDungeonsYaml.edges[0].node.name}</h1>
 
-      {data.allDataYaml.edges[0].node.fights.map((fight) => {
+      {data.allDungeonsYaml.edges[0].node.fights?.map((fight) => {
         return (
           <div>
-            <h2>{fight.name}</h2>
+            <h2>{fight?.name}</h2>
             <ul>
-            {fight.strategy.map((strat, index) => {
+            {fight?.strategy?.map((strat, index) => {
               return (
                 <li key={index}>{strat}</li>
               )
@@ -32,7 +31,7 @@ export default DungeonName
 
 export const query = graphql`
   query DungeonData($dungeonId: String) {
-    allDataYaml(filter: {dungeonId: {eq: $dungeonId}}) {
+    allDungeonsYaml(filter: {dungeonId: {eq: $dungeonId}}) {
       edges {
       node {
         name,
