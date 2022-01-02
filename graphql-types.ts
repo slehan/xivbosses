@@ -620,10 +620,13 @@ export type DungeonsYaml = Node & {
   parent?: Maybe<Node>;
   children: Array<Node>;
   internal: Internal;
+  fights?: Maybe<Array<Maybe<DungeonsYamlFights>>>;
   dungeonId?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
+  level?: Maybe<Scalars['String']>;
+  roulette?: Maybe<Scalars['String']>;
+  lootItemLevel?: Maybe<Scalars['String']>;
   expansionId?: Maybe<Scalars['String']>;
-  fights?: Maybe<Array<Maybe<DungeonsYamlFights>>>;
 };
 
 export type DungeonsYamlFights = {
@@ -914,10 +917,13 @@ export type QueryDungeonsYamlArgs = {
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
+  fights?: InputMaybe<DungeonsYamlFightsFilterListInput>;
   dungeonId?: InputMaybe<StringQueryOperatorInput>;
   name?: InputMaybe<StringQueryOperatorInput>;
+  level?: InputMaybe<StringQueryOperatorInput>;
+  roulette?: InputMaybe<StringQueryOperatorInput>;
+  lootItemLevel?: InputMaybe<StringQueryOperatorInput>;
   expansionId?: InputMaybe<StringQueryOperatorInput>;
-  fights?: InputMaybe<DungeonsYamlFightsFilterListInput>;
 };
 
 
@@ -1090,10 +1096,13 @@ export type DungeonsYamlFilterInput = {
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
+  fights?: InputMaybe<DungeonsYamlFightsFilterListInput>;
   dungeonId?: InputMaybe<StringQueryOperatorInput>;
   name?: InputMaybe<StringQueryOperatorInput>;
+  level?: InputMaybe<StringQueryOperatorInput>;
+  roulette?: InputMaybe<StringQueryOperatorInput>;
+  lootItemLevel?: InputMaybe<StringQueryOperatorInput>;
   expansionId?: InputMaybe<StringQueryOperatorInput>;
-  fights?: InputMaybe<DungeonsYamlFightsFilterListInput>;
 };
 
 export type DungeonsYamlFightsFilterListInput = {
@@ -1352,12 +1361,15 @@ export type FileFieldsEnum =
   | 'childrenExpansionsYaml___dungeons___internal___mediaType'
   | 'childrenExpansionsYaml___dungeons___internal___owner'
   | 'childrenExpansionsYaml___dungeons___internal___type'
-  | 'childrenExpansionsYaml___dungeons___dungeonId'
-  | 'childrenExpansionsYaml___dungeons___name'
-  | 'childrenExpansionsYaml___dungeons___expansionId'
   | 'childrenExpansionsYaml___dungeons___fights'
   | 'childrenExpansionsYaml___dungeons___fights___name'
   | 'childrenExpansionsYaml___dungeons___fights___strategy'
+  | 'childrenExpansionsYaml___dungeons___dungeonId'
+  | 'childrenExpansionsYaml___dungeons___name'
+  | 'childrenExpansionsYaml___dungeons___level'
+  | 'childrenExpansionsYaml___dungeons___roulette'
+  | 'childrenExpansionsYaml___dungeons___lootItemLevel'
+  | 'childrenExpansionsYaml___dungeons___expansionId'
   | 'childrenExpansionsYaml___expansionId'
   | 'childrenExpansionsYaml___name'
   | 'childrenExpansionsYaml___id'
@@ -1413,12 +1425,15 @@ export type FileFieldsEnum =
   | 'childExpansionsYaml___dungeons___internal___mediaType'
   | 'childExpansionsYaml___dungeons___internal___owner'
   | 'childExpansionsYaml___dungeons___internal___type'
-  | 'childExpansionsYaml___dungeons___dungeonId'
-  | 'childExpansionsYaml___dungeons___name'
-  | 'childExpansionsYaml___dungeons___expansionId'
   | 'childExpansionsYaml___dungeons___fights'
   | 'childExpansionsYaml___dungeons___fights___name'
   | 'childExpansionsYaml___dungeons___fights___strategy'
+  | 'childExpansionsYaml___dungeons___dungeonId'
+  | 'childExpansionsYaml___dungeons___name'
+  | 'childExpansionsYaml___dungeons___level'
+  | 'childExpansionsYaml___dungeons___roulette'
+  | 'childExpansionsYaml___dungeons___lootItemLevel'
+  | 'childExpansionsYaml___dungeons___expansionId'
   | 'childExpansionsYaml___expansionId'
   | 'childExpansionsYaml___name'
   | 'childExpansionsYaml___id'
@@ -1498,12 +1513,15 @@ export type FileFieldsEnum =
   | 'childrenDungeonsYaml___internal___mediaType'
   | 'childrenDungeonsYaml___internal___owner'
   | 'childrenDungeonsYaml___internal___type'
-  | 'childrenDungeonsYaml___dungeonId'
-  | 'childrenDungeonsYaml___name'
-  | 'childrenDungeonsYaml___expansionId'
   | 'childrenDungeonsYaml___fights'
   | 'childrenDungeonsYaml___fights___name'
   | 'childrenDungeonsYaml___fights___strategy'
+  | 'childrenDungeonsYaml___dungeonId'
+  | 'childrenDungeonsYaml___name'
+  | 'childrenDungeonsYaml___level'
+  | 'childrenDungeonsYaml___roulette'
+  | 'childrenDungeonsYaml___lootItemLevel'
+  | 'childrenDungeonsYaml___expansionId'
   | 'childDungeonsYaml___id'
   | 'childDungeonsYaml___parent___id'
   | 'childDungeonsYaml___parent___parent___id'
@@ -1542,12 +1560,15 @@ export type FileFieldsEnum =
   | 'childDungeonsYaml___internal___mediaType'
   | 'childDungeonsYaml___internal___owner'
   | 'childDungeonsYaml___internal___type'
-  | 'childDungeonsYaml___dungeonId'
-  | 'childDungeonsYaml___name'
-  | 'childDungeonsYaml___expansionId'
   | 'childDungeonsYaml___fights'
   | 'childDungeonsYaml___fights___name'
   | 'childDungeonsYaml___fights___strategy'
+  | 'childDungeonsYaml___dungeonId'
+  | 'childDungeonsYaml___name'
+  | 'childDungeonsYaml___level'
+  | 'childDungeonsYaml___roulette'
+  | 'childDungeonsYaml___lootItemLevel'
+  | 'childDungeonsYaml___expansionId'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -3324,12 +3345,15 @@ export type ExpansionsYamlFieldsEnum =
   | 'dungeons___internal___mediaType'
   | 'dungeons___internal___owner'
   | 'dungeons___internal___type'
-  | 'dungeons___dungeonId'
-  | 'dungeons___name'
-  | 'dungeons___expansionId'
   | 'dungeons___fights'
   | 'dungeons___fights___name'
   | 'dungeons___fights___strategy'
+  | 'dungeons___dungeonId'
+  | 'dungeons___name'
+  | 'dungeons___level'
+  | 'dungeons___roulette'
+  | 'dungeons___lootItemLevel'
+  | 'dungeons___expansionId'
   | 'expansionId'
   | 'name'
   | 'id'
@@ -3597,12 +3621,15 @@ export type DungeonsYamlFieldsEnum =
   | 'internal___mediaType'
   | 'internal___owner'
   | 'internal___type'
-  | 'dungeonId'
-  | 'name'
-  | 'expansionId'
   | 'fights'
   | 'fights___name'
-  | 'fights___strategy';
+  | 'fights___strategy'
+  | 'dungeonId'
+  | 'name'
+  | 'level'
+  | 'roulette'
+  | 'lootItemLevel'
+  | 'expansionId';
 
 export type DungeonsYamlGroupConnection = {
   totalCount: Scalars['Int'];
@@ -3670,7 +3697,7 @@ export type DungeonDataQuery = { allDungeonsYaml: { edges: Array<{ node: { name?
 export type ExpansionsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ExpansionsQuery = { allExpansionsYaml: { nodes: Array<{ name?: string | null | undefined, dungeons?: Array<{ name?: string | null | undefined, dungeonId?: string | null | undefined } | null | undefined> | null | undefined }> } };
+export type ExpansionsQuery = { allExpansionsYaml: { nodes: Array<{ name?: string | null | undefined, dungeons?: Array<{ name?: string | null | undefined, dungeonId?: string | null | undefined, level?: string | null | undefined, lootItemLevel?: string | null | undefined } | null | undefined> | null | undefined }> } };
 
 export type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
 

@@ -5,14 +5,13 @@ import { graphql, PageProps } from "gatsby"
 import { ExpansionsQuery, ExpansionsYaml  } from "../../graphql-types"
 
 const IndexPage = ({ data }: PageProps<ExpansionsQuery>) => {
-  console.log("ayyyy" + data)
-  return (
+   return (
   <Layout>
     <ul>
       {data.allExpansionsYaml.nodes.map(expansion =>
         <li>
           {expansion.name}
-          <ul>{expansion.dungeons?.map(dungeon =>
+          <ul>{expansion.dungeons?.sort((a, b) => (a.level - b.level) + (a.lootItemLevel - b.lootItemLevel)).map(dungeon =>
             <li><a href={`/dungeons/${dungeon?.dungeonId}`}>{dungeon?.name}</a></li>)}
           </ul>
         </li>
@@ -29,7 +28,9 @@ query Expansions {
 				name,
         dungeons {
           name,
-          dungeonId
+          dungeonId,
+          level,
+          lootItemLevel
         }
       }
     }

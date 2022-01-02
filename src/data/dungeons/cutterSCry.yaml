@@ -8,9 +8,9 @@ fights:
   - name: Boss 3
     strategy:
       - Put strategy here
-dungeonId: amaurot
-name: Amaurot
-level: '80'
-roulette: Level 50/60/70/80
-lootItemLevel: '430'
-expansionId: shb
+dungeonId: cutterSCry
+name: Cutter's Cry
+level: '38'
+roulette: Leveling
+lootItemLevel: '40'
+expansionId: arr

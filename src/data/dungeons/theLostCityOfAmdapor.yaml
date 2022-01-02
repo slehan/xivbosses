@@ -8,9 +8,9 @@ fights:
   - name: Boss 3
     strategy:
       - Put strategy here
-dungeonId: amaurot
-name: Amaurot
-level: '80'
+dungeonId: theLostCityOfAmdapor
+name: The Lost City of Amdapor
+level: '50'
 roulette: Level 50/60/70/80
-lootItemLevel: '430'
-expansionId: shb
+lootItemLevel: '70'
+expansionId: arr
