@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
+    "path": "/dungeons/theAurumVale",
+    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"The Aurum Vale","fights":[{"name":"Boss 1","strategy":["Put strategy here"]},{"name":"Boss 2","strategy":["Put strategy here"]},{"name":"Boss 3","strategy":["Put strategy here"]}]}}]}},"pageContext":{"dungeonId":"theAurumVale"}},
+    "staticQueryHashes": ["3649515864"]}

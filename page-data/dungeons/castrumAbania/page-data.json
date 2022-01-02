@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
+    "path": "/dungeons/castrumAbania",
+    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"Castrum Abania","fights":[{"name":"Boss 1","strategy":["Put strategy here"]},{"name":"Boss 2","strategy":["Put strategy here"]},{"name":"Boss 3","strategy":["Put strategy here"]}]}}]}},"pageContext":{"dungeonId":"castrumAbania"}},
+    "staticQueryHashes": ["3649515864"]}

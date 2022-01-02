@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
+    "path": "/dungeons/theSunkenTempleOfQarnHard",
+    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"The Sunken Temple of Qarn (Hard)","fights":[{"name":"Boss 1","strategy":["Put strategy here"]},{"name":"Boss 2","strategy":["Put strategy here"]},{"name":"Boss 3","strategy":["Put strategy here"]}]}}]}},"pageContext":{"dungeonId":"theSunkenTempleOfQarnHard"}},
+    "staticQueryHashes": ["3649515864"]}

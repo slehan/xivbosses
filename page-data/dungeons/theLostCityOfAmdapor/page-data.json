@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
+    "path": "/dungeons/theLostCityOfAmdapor",
+    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"The Lost City of Amdapor","fights":[{"name":"Boss 1","strategy":["Put strategy here"]},{"name":"Boss 2","strategy":["Put strategy here"]},{"name":"Boss 3","strategy":["Put strategy here"]}]}}]}},"pageContext":{"dungeonId":"theLostCityOfAmdapor"}},
+    "staticQueryHashes": ["3649515864"]}

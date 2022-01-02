@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
     "path": "/dungeons/amaurot",
-    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"Amaurot","fights":[{"name":"Chopper","strategy":["Summon Chopper by interacting with the coral","Run out of Charged Whisker, to avoid being paralyzed"]},{"name":"Captain Madison","strategy":["Kill adds first","AoE dogs down when they spawn at 50%"]},{"name":"Denn the Orcatoothed","strategy":["When the gates in all four corners start bubbling, interact with them to prevent adds from spawning","If you're targeted by the adds, bring them to the tank"]}]}}]}},"pageContext":{"dungeonId":"amaurot"}},
+    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"Amaurot","fights":[{"name":"Boss 1","strategy":["Put strategy here"]},{"name":"Boss 2","strategy":["Put strategy here"]},{"name":"Boss 3","strategy":["Put strategy here"]}]}}]}},"pageContext":{"dungeonId":"amaurot"}},
     "staticQueryHashes": ["3649515864"]}

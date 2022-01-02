@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-dungeons-dungeon-tsx",
+    "path": "/dungeons/theDrownedCityOfSkalla",
+    "result": {"data":{"allDungeonsYaml":{"edges":[{"node":{"name":"The Drowned City of Skalla","fights":[{"name":"Boss 1","strategy":["Put strategy here"]},{"name":"Boss 2","strategy":["Put strategy here"]},{"name":"Boss 3","strategy":["Put strategy here"]}]}}]}},"pageContext":{"dungeonId":"theDrownedCityOfSkalla"}},
+    "staticQueryHashes": ["3649515864"]}
