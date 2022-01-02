@@ -8,9 +8,9 @@ fights:
   - name: Boss 3
     strategy:
       - Put strategy here
-dungeonId: amaurot
-name: Amaurot
-level: '80'
-roulette: Level 50/60/70/80
-lootItemLevel: '430'
-expansionId: shb
+dungeonId: dzemaelDarkhold
+name: Dzemael Darkhold
+level: '44'
+roulette: Leveling
+lootItemLevel: '46'
+expansionId: arr

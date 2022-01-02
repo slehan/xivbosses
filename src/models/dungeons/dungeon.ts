@@ -1,6 +1,7 @@
 import { Fight } from "./fight";
 
 export interface Dungeon {
-    name: String
+    id: string
+    name: string
     fights: Fight[]
 }

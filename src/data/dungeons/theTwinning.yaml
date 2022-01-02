@@ -8,8 +8,8 @@ fights:
   - name: Boss 3
     strategy:
       - Put strategy here
-dungeonId: amaurot
-name: Amaurot
+dungeonId: theTwinning
+name: The Twinning
 level: '80'
 roulette: Level 50/60/70/80
 lootItemLevel: '430'
