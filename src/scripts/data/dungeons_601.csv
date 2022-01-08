@@ -1,0 +1,84 @@
+name,level,roulette,lootItemLevel,expansionId
+Sastasha,15,Leveling,17,arr
+The Tam-Tara Deepcroft,16,Leveling,17,arr
+Copperbell Mines,17,Leveling,17,arr
+Halatali,20,Leveling,20,arr
+The Thousand Maws of Toto-Rak,24,Leveling,24,arr
+Haukke Manor,28,Leveling,28,arr
+Brayflox's Longstop,32,Leveling,32,arr
+The Sunken Temple of Qarn,35,Leveling,37,arr
+Cutter's Cry,38,Leveling,40,arr
+The Stone Vigil,41,Leveling,43,arr
+Dzemael Darkhold,44,Leveling,46,arr
+The Aurum Vale,47,Leveling,49,arr
+The Wanderer's Palace,50,Level 50/60/70/80,55,arr
+Amdapor Keep,50,Level 50/60/70/80,55,arr
+Pharos Sirius,50,Level 50/60/70/80,60,arr
+Copperbell Mines (Hard),50,Level 50/60/70/80,60,arr
+Haukke Manor (Hard),50,Level 50/60/70/80,60,arr
+The Lost City of Amdapor,50,Level 50/60/70/80,70,arr
+Halatali (Hard),50,Level 50/60/70/80,70,arr
+Brayflox's Longstop (Hard),50,Level 50/60/70/80,70,arr
+Hullbreaker Isle,50,Level 50/60/70/80,80,arr
+The Stone Vigil (Hard),50,Level 50/60/70/80,80,arr
+The Tam-Tara Deepcroft (Hard),50,Level 50/60/70/80,80,arr
+Snowcloak,50,Level 50/60/70/80,90,arr
+Sastasha (Hard),50,Level 50/60/70/80,90,arr
+The Sunken Temple of Qarn (Hard),50,Level 50/60/70/80,90,arr
+The Keeper of the Lake,50,Level 50/60/70/80,100,arr
+The Wanderer's Palace (Hard),50,Level 50/60/70/80,100,arr
+Amdapor Keep (Hard),50,Level 50/60/70/80,100,arr
+The Dusk Vigil,51,Leveling,120,hw
+Sohm Al,53,Leveling,130,hw
+The Aery,55,Leveling,136,hw
+The Vault,57,Leveling,142,hw
+The Great Gubal Library,59,Leveling,148,hw
+The Aetherochemical Research Facility,60,Level 50/60/70/80,-,hw
+Neverreap,60,Level 50/60/70/80,160,hw
+The Fractal Continuum,60,Level 50/60/70/80,160,hw
+Saint Mocianne's Arboretum,60,Level 50/60/70/80,185,hw
+Pharos Sirius (Hard),60,Level 50/60/70/80,185,hw
+The Antitower,60,Level 50/60/70/80,195,hw
+The Lost City of Amdapor (Hard),60,Level 50/60/70/80,195,hw
+Sohr Khai,60,Level 50/60/70/80,215,hw
+Hullbreaker Isle (Hard),60,Level 50/60/70/80,215,hw
+Xelphatol,60,Level 50/60/70/80,225,hw
+The Great Gubal Library (Hard),60,Level 50/60/70/80,225,hw
+Baelsar's Wall,60,Level 50/60/70/80,245,hw
+Sohm Al (Hard),60,Level 50/60/70,245,hw
+The Sirensong Sea,61,Leveling,260,sb
+Shisui of the Violet Tides,63,Leveling,270,sb
+Bardam's Mettle,65,Leveling,276,sb
+Doma Castle,67,Leveling,282,sb
+Castrum Abania,69,Leveling,288,sb
+Ala Mhigo,70,Level 50/60/70/80,300,sb
+Kugane Castle,70,Level 50/60/70/80,300,sb
+The Temple of the Fist,70,Level 50/60/70/80,300,sb
+The Drowned City of Skalla,70,Level 50/60/70/80,315,sb
+Hells' Lid,70,Level 50/60/70/80,325,sb
+The Fractal Continuum (Hard),70,Level 50/60/70/80,325,sb
+The Swallow's Compass,70,Level 50/60/70/80,345,sb
+The Burn,70,Level 50/60/70/80,355,sb
+Saint Mocianne's Arboretum (Hard),70,Level 50/60/70/80,355,sb
+The Ghimlyt Dark,70,Level 50/60/70/80,375,sb
+Holminster Switch,71,Leveling,390,shb
+Dohn Mheg,73,Leveling,400,shb
+The Qitana Ravel,75,Leveling,406,shb
+Malikah's Well,77,Leveling,412,shb
+Mt. Gulg,79,Leveling,418,shb
+Amaurot,80,Level 50/60/70/80,430,shb
+The Twinning,80,Level 50/60/70/80,430,shb
+Akadaemia Anyder,80,Level 50/60/70/80,430,shb
+The Grand Cosmos,80,Level 50/60/70/80,445,shb
+Anamnesis Anyder,80,Level 50/60/70/80,455,shb
+The Heroes' Gauntlet,80,Level 50/60/70/80,475,shb
+Matoya's Relict,80,Level 50/60/70/80,485,shb
+Paglth'an,80,Level 50/60/70/80,505,shb
+The Tower of Zot,81,Leveling,520,ew
+The Tower of Babil,83,Leveling,530,ew
+Vanaspati,85,Leveling,536,ew
+Ktisis Hyperboreia,87,Leveling,542,ew
+The Aitiascope,89,Leveling,548,ew
+The Dead Ends,90,Expert,560,ew
+The Stigma Dreamscape,90,Expert,560,ew
+Smileton,90,Expert,560,ew
