@@ -3,10 +3,12 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { graphql, PageProps } from "gatsby"
 import { ExpansionsQuery, ExpansionsYaml  } from "../../graphql-types"
+import DungeonSearch from "../components/searchbar"
 
 const IndexPage = ({ data }: PageProps<ExpansionsQuery>) => {
    return (
   <Layout>
+    <DungeonSearch />
     <ul>
       {data.allExpansionsYaml.nodes.map(expansion =>
         <li>
