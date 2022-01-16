@@ -3682,6 +3682,11 @@ export type SiteTitleQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type SiteTitleQueryQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined };
 
+export type DungeonsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type DungeonsQuery = { allDungeonsYaml: { edges: Array<{ node: { name?: string | null | undefined, dungeonId?: string | null | undefined } }> } };
+
 export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
