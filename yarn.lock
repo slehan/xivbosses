@@ -4105,7 +4105,7 @@ dataloader@2.0.0:
   resolved "https://registry.npmjs.org/dataloader/-/dataloader-2.0.0.tgz"
   integrity sha512-YzhyDAwA4TaQIhM5go+vCLmU0UikghC/t9DTQYZR2M/UvZ1MdOhPezSDZcjj9uqQJOMqjLcpWtyW2iNINdlatQ==
 
-date-fns@^2.25.0, date-fns@^2.27.0:
+date-fns@^2.25.0, date-fns@^2.28.0:
   version "2.28.0"
   resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz"
   integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
@@ -5583,19 +5583,20 @@ gatsby-page-utils@^2.5.2:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-gatsby-cloud@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-4.4.0.tgz"
-  integrity sha512-Fsm+eZUK5teP+6WWaBCjv/3PozZkUkyamhbul3ez+IId5R/hU0XF0hNcyxfuB62o8JMd6G78ZQXBh98KzqM+qQ==
+gatsby-plugin-gatsby-cloud@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-4.8.0.tgz#08286ba4e26c9177a074f74d6127e9163960ceff"
+  integrity sha512-dK+ipJXmwJRej9kKg+adS7g8DYe7vFGSyFxz3aqukt5n8aN1rVSff+pbOhkYOroaObpEOZlmNVzTIDbQ76JYRw==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    date-fns "^2.27.0"
+    date-fns "^2.28.0"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.4.0"
-    gatsby-telemetry "^3.4.0"
+    gatsby-core-utils "^3.8.0"
+    gatsby-telemetry "^3.8.0"
+    js-cookie "^3.0.1"
     kebab-hash "^0.1.2"
     lodash "^4.17.21"
-    webpack-assets-manifest "^5.0.6"
+    webpack-assets-manifest "^5.1.0"
 
 gatsby-plugin-graphql-codegen@^3.1.0:
   version "3.1.0"
@@ -5762,7 +5763,7 @@ gatsby-source-filesystem@^4.8.0:
     valid-url "^1.0.9"
     xstate "^4.26.1"
 
-gatsby-telemetry@^3.4.0, gatsby-telemetry@^3.5.2, gatsby-telemetry@^3.8.0:
+gatsby-telemetry@^3.5.2, gatsby-telemetry@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.8.0.tgz#24a2a3b372053c4069763af50db534a03576bcf8"
   integrity sha512-Kd2sntz+UjIjRvqzqJLu4d1fljeq+qSlGdCGeAQMEB4HdvQVtHDCR9+QyG0TQO5V5ZWBquvG1d+lHjq1jRL1xg==
@@ -7158,6 +7159,11 @@ js-convert-case@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/js-convert-case/-/js-convert-case-4.2.0.tgz#d153b457974a865586d7b031793145c2143ea882"
   integrity sha512-i4mHCxiBNj6ajjMnZnC70qAOMA8gb+YgYipy2VR7a+Q5EBgEQ2/SgSAUBdNEyObk++B4AIUiFWeDEX2ggOd8cQ==
+
+js-cookie@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
+  integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -11214,10 +11220,10 @@ webidl-conversions@^3.0.0:
   resolved "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz"
   integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
 
-webpack-assets-manifest@^5.0.6:
-  version "5.0.6"
-  resolved "https://registry.npmjs.org/webpack-assets-manifest/-/webpack-assets-manifest-5.0.6.tgz"
-  integrity sha512-CW94ylPHurZTmxnYajSFA8763Cv/QFIKNgBwqBLaIOnBjH1EbDUAf8Eq1/i+o8qaKyKXJ3aX7r4/jtpXD88ldg==
+webpack-assets-manifest@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/webpack-assets-manifest/-/webpack-assets-manifest-5.1.0.tgz#5af328f6c8fa760cb9a62af631a83da2b478b791"
+  integrity sha512-kPuTMEjBrqZQVJ5M6yXNBCEdFbQQn7p+loNXt8NOeDFaAbsNFWqqwR0YL1mfG5LbwhK5FLXWXpuK3GuIIZ46rg==
   dependencies:
     chalk "^4.0"
     deepmerge "^4.0"
