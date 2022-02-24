@@ -5503,10 +5503,10 @@ gatsby-cli@^4.5.2:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.4.0, gatsby-core-utils@^3.5.1, gatsby-core-utils@^3.5.2, gatsby-core-utils@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.7.0.tgz#edc928d948a3672d3166b914225a70369325818e"
-  integrity sha512-CboIzpEFbaD4+WrozKl3fMpxUetcaDq0aWPfrfzAtc8l0JMlD3GS2Q/uW7HpcvTAlSGv2ZomTzd2ySLV/AgpTQ==
+gatsby-core-utils@^3.4.0, gatsby-core-utils@^3.5.1, gatsby-core-utils@^3.5.2, gatsby-core-utils@^3.7.0, gatsby-core-utils@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.8.0.tgz#aae62bd2aa77e9abfa381114422d8d3c340b6092"
+  integrity sha512-OUuTvEcC5cygLyDAmib+Je1txtNc9X8sV8QcKqWepUYXGySIzCaowBh55vn97wXmdYpUNOa3PXIMR+KsBfA2Rw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -5515,9 +5515,12 @@ gatsby-core-utils@^3.4.0, gatsby-core-utils@^3.5.1, gatsby-core-utils@^3.5.2, ga
     file-type "^16.5.3"
     fs-extra "^10.0.0"
     got "^11.8.3"
+    import-from "^4.0.0"
+    lmdb "^2.1.7"
     lock "^1.1.0"
     node-object-hash "^2.3.10"
     proper-lockfile "^4.1.2"
+    resolve-from "^5.0.0"
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
@@ -5711,17 +5714,16 @@ gatsby-react-router-scroll@^5.5.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-source-filesystem@^4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.5.2.tgz#e139b3beb4afa14cd9211899ab0542091724cc35"
-  integrity sha512-q3S7ffE3EdxIr3kpqN9UyDOJeHePuc6VLqodibbeEFO/l+DVrmvLSDTQlo2n6MUQtEsQ+UWyitcX2+WydpCGBg==
+gatsby-source-filesystem@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.8.0.tgz#5c4ed3395ccfecf8574b989ea6f8c1e0d6839362"
+  integrity sha512-krznULFMtmfJStcy18dcNCv8dFW1e62JTaTMzqz9LdC8cEimqeKn2sz4i0ZZhfVPzdhkl8pUg0Re4yVbtR53ww==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chokidar "^3.5.2"
-    fastq "^1.13.0"
     file-type "^16.5.3"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.5.2"
+    gatsby-core-utils "^3.8.0"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.5.2"
@@ -6524,7 +6526,7 @@ import-from@3.0.0:
   dependencies:
     resolve-from "^5.0.0"
 
-import-from@4.0.0:
+import-from@4.0.0, import-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/import-from/-/import-from-4.0.0.tgz"
   integrity sha512-P9J71vT5nLlDeV8FHs5nNxaLbrpfAV5cF5srvbZfpwpcJoM/xZR3hiv+q+SAnuSmuGbXMWud063iIMx/V/EWZQ==
@@ -7339,6 +7341,17 @@ lmdb-store@^1.6.11:
   optionalDependencies:
     msgpackr "^1.4.7"
 
+lmdb@^2.1.7:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-2.2.2.tgz#4d7acaaf52e9739d4cd76c8ef5b9c02c42af2263"
+  integrity sha512-ih7wahPRxy19T+r6/vN9UfdpDfIPXlLL/PkRVkDuNPA/MNGZIiGM/v1zUyhC/+4sveponuQRHVObt8sTVrW8rw==
+  dependencies:
+    msgpackr "^1.5.4"
+    nan "^2.14.2"
+    node-gyp-build "^4.2.3"
+    ordered-binary "^1.2.4"
+    weak-lru-cache "^1.2.2"
+
 load-bmfont@^1.3.1, load-bmfont@^1.4.0:
   version "1.4.1"
   resolved "https://registry.npmjs.org/load-bmfont/-/load-bmfont-1.4.1.tgz"
@@ -7888,6 +7901,13 @@ msgpackr@^1.4.7:
   optionalDependencies:
     msgpackr-extract "^1.0.14"
 
+msgpackr@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.5.4.tgz#2b6ea6cb7d79c0ad98fc76c68163c48eda50cf0d"
+  integrity sha512-Z7w5Jg+2Q9z9gJxeM68d7tSuWZZGnFIRhZnyqcZCa/1dKkhOCNvR1TUV3zzJ3+vj78vlwKRzUgVDlW4jiSOeDA==
+  optionalDependencies:
+    msgpackr-extract "^1.0.14"
+
 multer@^1.4.3:
   version "1.4.3"
   resolved "https://registry.npmjs.org/multer/-/multer-1.4.3.tgz"
@@ -8316,6 +8336,11 @@ ordered-binary@^1.0.0:
   version "1.1.3"
   resolved "https://registry.npmjs.org/ordered-binary/-/ordered-binary-1.1.3.tgz"
   integrity sha512-tDTls+KllrZKJrqRXUYJtIcWIyoQycP7cVN7kzNNnhHKF2bMKHflcAQK+pF2Eb1iVaQodHxqZQr0yv4HWLGBhQ==
+
+ordered-binary@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/ordered-binary/-/ordered-binary-1.2.4.tgz#51d3a03af078a0bdba6c7bc8f4fedd1f5d45d83e"
+  integrity sha512-A/csN0d3n+igxBPfUrjbV5GC69LWj2pjZzAAeeHXLukQ4+fytfP4T1Lg0ju7MSPSwq7KtHkGaiwO8URZN5IpLg==
 
 os-tmpdir@~1.0.2:
   version "1.0.2"
@@ -11089,6 +11114,11 @@ weak-lru-cache@^1.0.0:
   version "1.1.3"
   resolved "https://registry.npmjs.org/weak-lru-cache/-/weak-lru-cache-1.1.3.tgz"
   integrity sha512-5LDIv+sr6uzT94Hhcq7Qv7gt3jxol4iMWUqOgJSLYbB5oO7bTSMqIBtKsytm8N2BufYOdJw86/qu+SDfbo/wKQ==
+
+weak-lru-cache@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/weak-lru-cache/-/weak-lru-cache-1.2.2.tgz#fdbb6741f36bae9540d12f480ce8254060dccd19"
+  integrity sha512-DEAoo25RfSYMuTGc9vPJzZcZullwIqRDSI9LOy+fkCJPi6hykCnfKaXTuPBDuXAUcqHXyOgFtHNp/kB2FjYHbw==
 
 web-streams-polyfill@4.0.0-beta.1:
   version "4.0.0-beta.1"
