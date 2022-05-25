@@ -8,7 +8,7 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.13",
     "fuse.js": "^6.5.3",
-    "gatsby": "^4.9.1",
+    "gatsby": "^4.15.0",
     "gatsby-plugin-gatsby-cloud": "^4.9.0",
     "gatsby-plugin-graphql-codegen": "^3.1.1",
     "gatsby-plugin-image": "^2.9.0",
